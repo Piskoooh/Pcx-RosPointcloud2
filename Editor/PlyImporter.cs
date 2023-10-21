@@ -87,7 +87,7 @@ namespace Pcx
         static Material GetDefaultMaterial()
         {
             // Via project asset database
-            var path_prj = "Assets/PcxForRosPointCloud2/Editor/Default Point.mat";
+            var path_prj = "Assets/Pcx-RosPointcloud2/Editor/Default Point.mat";
             return AssetDatabase.LoadAssetAtPath<Material>(path_prj);
         }
 
