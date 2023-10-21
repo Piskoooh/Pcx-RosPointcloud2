@@ -1,0 +1,16 @@
+{
+    "name": "PcxForRosPointcloud2.Editor",
+    "references": [
+        "PcxForRosPointcloud2"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

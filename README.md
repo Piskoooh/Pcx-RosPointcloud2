@@ -1,5 +1,22 @@
-Still original! Will modify later!
+Pcx-RosPointcloud2
 ===================================
+
+Pcx-RosPointcloud2 is a fork of a Poinc Cloud library called Pcx by Keijiro Takahashi (https://github.com/keijiro/Pcx) for importing  point cloud data which is constructed with right handed coordinate such as pointcloud2 in ROS. 
+Use git submodule to include this repo to your Unity project.
+
+Currently, **only static loading is supported**; dynamic loading will be supported in the future(maybe).
+
+System Requirements
+-------------------
+Unity 2022.3.4f1
+
+Select Coordinate
+-----------------
+![image](selectCoordinate.png)
+
+ You can select the coordinate type in the inspector window.
+
+
 Pcx - Point Cloud Importer/Renderer for Unity
 =============================================
 
