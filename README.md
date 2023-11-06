@@ -3,21 +3,35 @@ Pcx-RosPointcloud2
 
 Pcx-RosPointcloud2 is a fork of a Poinc Cloud library called Pcx by Keijiro Takahashi (https://github.com/keijiro/Pcx) for importing  point cloud data which is constructed with right handed coordinate such as pointcloud2 in ROS. 
 Use git submodule to include this repo to your Unity project.
-
-Currently, **only static loading is supported**; dynamic loading will be supported in the future(maybe).
+**Only static importing is supported**
 
 System Requirements
 -------------------
 Unity 2022.3.4f1
+
+Usage with RTABMAP
+-----
+1. Create a pointcloud database using [rtabmap](http://introlab.github.io/rtabmap/).
+2. Run `rtabmap-export` in your terminal to convert database to ply file. See [here](https://github.com/introlab/rtabmap/issues/918) for options. 
+```
+rtabmap-export [options] <database_path>.db
+```
+3. Add this repository to your unity `Assets` file.
+```
+git submodule add  -b master <url of this repositry>
+```
+4. Import `.ply` file in to your Unity `Assets` folder.
+5. Select `.ply` file in Project window and change `CoordinateType`to `RightHanded` in Inspector window.
+
+   After you apply the change, the rotation of `.ply` file will be fixed.
 
 Select Coordinate
 -----------------
 ![image](selectCoordinate.png)
 
  You can select the coordinate type in the inspector window.
-
-
-# The original README.md for Pcx below:
+ 
+# Below from this line: The original README.md for Pcx
 Pcx - Point Cloud Importer/Renderer for Unity
 =============================================
 
